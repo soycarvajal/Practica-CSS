@@ -1,3 +1,75 @@
+* {
+    margin: 0;
+}
+
 body {
-    color: tomato;
+    background: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 1100px;  /* ancho de la caja contenedora (div) - auto es para que se ajuste automaticamente al ancho de la pantalla*/
+    margin: 0px auto; /*centra la caja contenedora (div)*/
+    border: 1px solid;
+}
+
+header {
+    background: red;
+    height: 100px; /*altura del header se ajusta el tamaño con px */
+    width: 100%; /*ancho del bloque del header cambia si se pone en px o en %*/
+    margin: 0px;
+    text-align: center; /*centrar texto*/
+    line-height: 100px; /*centrar de arriba hacia abajo, es dependiendo la altura del header en este caso es height: 100px */
+    color: white;
+    border-bottom: 2px dashed black; /*borde de linea punteada de 2px*/
+}
+
+nav {
+    height: 50px; /*Altura del navegador*/
+    background: lightblue; /*color de fondo del navegador*/
+    border-bottom: solid 2px; /*borde de linea solida de 2px*/
+}
+
+nav ul li {
+    float: left; /*acomoda la lista a hacia la derecha (se puede cambiar left o right)*/
+    list-style: none; /*quita los puntos de las listas*/
+    margin: 10px;
+}
+
+.clearfix {
+    clear: both; /*Buscar otra manera de hacer esto, bajar el contenido*/
+}
+
+.content {
+    float: left;
+    width: calc(80% - 80px);
+    background-color: lightgreen;
+    height: auto;
+    min-height: 500px;
+    padding: 20px;
+}
+
+.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px lightcoral;
+}
+
+aside {
+    float: right;
+    width: calc(20% - 20px);
+    background-color: lightcoral;
+    height: auto;
+    min-height: 500px;
+    padding: 20px;
+}
+
+footer {
+    height: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
 }
